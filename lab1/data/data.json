@@ -1,0 +1,22 @@
+[
+  {
+    "level": "sr",
+    "yearsOfExperience": 8,
+    "id": 1,
+    "name": "mos3ad",
+    "email": "mos3ad@gmail.com",
+    "salary": "90000",
+    "age": "20",
+    "department": "IT"
+  },
+  {
+    "level": "sr",
+    "yearsOfExperience": 8,
+    "id": 2,
+    "name": "mos3ad",
+    "email": "mos3ad@gmail.com",
+    "salary": "90000",
+    "age": "20",
+    "department": "IT"
+  }
+]

@@ -9,8 +9,8 @@ function addEmployee(args, data) {
   const currentData = {
     level: "jr",
     yearsOfExperience: 0,
-    id: ++counter.currentCounter,
     ...parsedArgs,
+    id: ++counter.currentCounter,
   };
 
   validate(parsedArgs);

@@ -1,12 +1,16 @@
-const fs = require("fs");
+import { readFileSync } from "fs";
 
-const addEmployee = require("./utility/addEmployee");
-const listAllEmploees = require("./utility/listEmployees").listAllEmploees;
-const listMatchedEmployees =
-  require("./utility/listEmployees").listMatchedEmployees;
+import addEmployee from "./operations/addEmployee.js";
+import editEmployeeWithId from "./operations/editEmployee.js";
+import {
+  listAllEmploees,
+  listMatchedEmployees,
+} from "./operations/listEmployees.js";
+import deleteEmployeeWithId from "./operations/deleteEmployee.js";
+
 const [, , cmd, ...args] = process.argv;
 
-const data = JSON.parse(fs.readFileSync("./data/data.json", "utf-8"));
+const data = JSON.parse(readFileSync("./data/data.json", "utf-8"));
 
 if (cmd === "add") {
   addEmployee(args, data);
@@ -17,4 +21,12 @@ if (cmd === "add") {
     const id = +args[0].split("=")[1];
     listMatchedEmployees(data, id);
   }
+} else if (cmd === "edit") {
+  const id = +args[0].split("=")[1];
+  editEmployeeWithId(data, id, args);
+} else if (cmd === "delete") {
+  const id = +args[0].split("=")[1];
+  deleteEmployeeWithId(data, id);
+} else {
+  throw new Error("please use valid command");
 }

@@ -1,5 +1,3 @@
-const fs = require("fs");
-
 // Helper function
 function list(dataToRead) {
   const listData = dataToRead
@@ -21,4 +19,4 @@ function listMatchedEmployees(dataToRead, id) {
   list(filteredEmployees);
 }
 
-module.exports = { listAllEmploees, listMatchedEmployees };
+export { listAllEmploees, listMatchedEmployees };

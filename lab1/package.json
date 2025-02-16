@@ -1,6 +1,7 @@
 {
   "name": "lab1",
   "version": "1.0.0",
+  "type": "module",
   "description": "this is the first lab in node.js course",
   "main": "index.js",
   "scripts": {
@@ -8,7 +9,5 @@
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "dotenv": "^16.4.7"
-  }
+  "dependencies": {}
 }

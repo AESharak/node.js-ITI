@@ -9,5 +9,9 @@
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {}
+  "devDependencies": {
+    "@antfu/eslint-config": "^4.2.1",
+    "@eslint/js": "^9.20.0",
+    "eslint": "^9.20.1"
+  }
 }

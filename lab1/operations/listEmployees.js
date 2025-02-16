@@ -5,7 +5,7 @@ function list(dataToRead) {
       (employee) =>
         `Name: ${employee.name}, Email: ${employee.email}, Salary: ${employee.salary}, Level: ${employee.level}, YearsOfExperience: ${employee.yearsOfExperience}`
     )
-    .join("\n");
+    .join('\n');
 
   console.log(listData);
 }
@@ -19,4 +19,4 @@ function listMatchedEmployees(dataToRead, id) {
   list(filteredEmployees);
 }
 
-export { listAllEmploees, listMatchedEmployees };
+export {listAllEmploees, listMatchedEmployees};

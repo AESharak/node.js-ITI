@@ -3,21 +3,21 @@
     "level": "sr",
     "yearsOfExperience": 5,
     "id": 2,
-    "name": "mohamedessama",
-    "salary": 100,
-    "email": "nagy@gmail.com",
+    "name": "Ahmed Essam",
+    "salary": 100000,
+    "email": "ahmed@gmail.com",
     "age": 24,
-    "department": "Al"
+    "department": "IT"
   },
   {
     "level": "sr",
     "yearsOfExperience": 5,
     "id": 3,
-    "name": "mohamedessama",
-    "salary": 100,
+    "name": "Mohamed Ibraheem",
+    "salary": 900000,
     "email": "nagy@gmail.com",
     "age": 24,
-    "department": "Al"
+    "department": "Security"
   },
   {
     "level": "sr",

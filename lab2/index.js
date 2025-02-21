@@ -29,7 +29,7 @@ const server = http.createServer((req,res)=>{
         return readStream.pipe(res);
     }else if (url === '/fayoum.jpg'){
         res.writeHead(200, {'Content-Type': 'image/jpeg'});
-        const filePath = path.join(__dirname, 'views', 'astronomy','fayoum.jpg');
+        const filePath = path.join(__dirname, 'assets', 'images','fayoum.jpg');
         const readStream = fs.createReadStream(filePath);
         return readStream.pipe(res);
     }else if (url === '/serbal'){
@@ -39,11 +39,11 @@ const server = http.createServer((req,res)=>{
         return readStream.pipe(res);
     }else if (url === '/serbal.jpg'){
         res.writeHead(200, {'Content-Type': 'image/jpeg'});
-        const filePath = path.join(__dirname, 'views', 'serbal','serbal.jpg');
+        const filePath = path.join(__dirname, 'assets', 'images','serbal.jpg');
         const readStream = fs.createReadStream(filePath);
         return readStream.pipe(res);
     }else if (url.match(/\.(css|js)$/)){
-        const filePath = path.join(__dirname,  'views', 'employees' , url);
+        const filePath = path.join(__dirname,  'assets', url);
         const readStream = fs.createReadStream(filePath);
         const contentType = url.endsWith('.css')? 'text/css' : 'text/javascript';
         res.writeHead(200, {'Content-Type': contentType});

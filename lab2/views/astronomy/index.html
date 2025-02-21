@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astronomy</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        }
+
+        body {
+            background-color: #0a192f;
+            color: #e2e8f0;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 80rem;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            text-align: center;
+            margin: 2rem 0;
+            color: #60a5fa;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 700;
+        }
+
+        .content-wrapper {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .img-container {
+            flex: 1;
+            max-width: 40rem;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+                        0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            background: #1a365d;
+            padding: 1rem;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+
+        img:hover {
+            transform: scale(1.02);
+        }
+
+        .description {
+            flex: 1;
+            padding: 1.5rem;
+            background: rgba(30, 58, 138, 0.3);
+            border-radius: 8px;
+            border-left: 4px solid #60a5fa;
+        }
+
+        .description h3 {
+            color: #60a5fa;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .description p {
+            color: #e2e8f0;
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+
+            h2 {
+                font-size: 2rem;
+            }
+
+            .content-wrapper {
+                flex-direction: column-reverse;
+            }
+
+            .img-container {
+                width: 100%;
+                margin: 0;
+            }
+
+            .description {
+                width: 100%;
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Astronomy</h2>
+        <div class="content-wrapper">
+            <div class="description">
+                <h3>A Symphony of Stars</h3>
+                <p>The clarity of the night sky allows us to witness various celestial phenomena, from twinkling stars to distant nebulae, all while being grounded by the silhouette of the landscape below. This remarkable view reminds us of our place in the vast cosmic arena and the endless wonders that lie beyond our world.</p>
+            </div>
+            <div class="img-container" id="imgContainer">
+                <img src="/fayoum.jpg" alt="Beautiful starry night sky" />
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    background-color: #f5f7fa;
+    color: #2d3748;
+    line-height: 1.5;
+}
+
+.container {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #2d3748;
+    text-align: center;
+}
+
+.employee-form {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: #4a5568;
+}
+
+input, select {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.2s;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: #4299e1;
+    box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.1);
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 1rem;
+    background-color: #4299e1;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.submit-btn:hover {
+    background-color: #3182ce;
+}
+
+.message {
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.message.success {
+    background-color: #c6f6d5;
+    color: #2f855a;
+}
+
+.message.error {
+    background-color: #fed7d7;
+    color: #c53030;
+}

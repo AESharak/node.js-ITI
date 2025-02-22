@@ -10,6 +10,7 @@ body {
     color: #f8e5ff;
     line-height: 1.6;
     background: linear-gradient(135deg, #2d1b2d 0%, #3d2b44 100%);
+    min-height: 100vh;
 }
 
 .container {
@@ -85,8 +86,47 @@ img:hover {
     color: #f8e5ff;
     font-size: 1.1rem;
     line-height: 1.8;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.download-link {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.75rem 1.5rem;
+    background: linear-gradient(135deg, #e4b7ff 0%, #9b6db7 100%);
+    border-radius: 8px;
+    color: #2d1b2d;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(228, 183, 255, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+.download-link:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(228, 183, 255, 0.4);
+    background: linear-gradient(135deg, #f0cbff 0%, #a77ac3 100%);
+}
+
+.download-link:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 10px rgba(228, 183, 255, 0.3);
+}
+
+.download-text {
+    margin-right: 0.75rem;
+}
+
+.download-icon {
+    font-size: 1.2em;
+    transition: transform 0.3s ease;
+}
+
+.download-link:hover .download-icon {
+    transform: translateY(3px);
 }
 
 .details {
@@ -133,5 +173,10 @@ img:hover {
     .description {
         width: 100%;
         padding: 1rem;
+    }
+
+    .download-link {
+        width: 100%;
+        justify-content: center;
     }
 }

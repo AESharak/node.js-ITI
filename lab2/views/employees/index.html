@@ -9,16 +9,18 @@
 <body>
     <header>
         <nav>
-            <li>
-                <a href="/">Show Employees</a>
-                <a href="/astronomy">Astronomy Image</a>
-                <a href="/serbal">Serbal Image</a>
-                <a href="/employee">Employee Form</a>
-            </li>
+            <ul>
+                <li><a href="/">Show Employees</a></li>
+                <li><a href="/astronomy">Astronomy Image</a></li>
+                <li><a href="/serbal">Serbal Image</a></li>
+                <li><a href="/employee" class="active">Employee Form</a></li>
+            </ul>
         </nav>
     </header>
-    <h1>Employees</h1>
-    <div class="cards-container" id="cardsContainer"></div>
+    <div class="container">
+        <h1>Employees</h1>
+        <div class="cards-container" id="cardsContainer"></div>
+    </div>
     <script src="employeesScript.js"></script>
 </body>
 </html>

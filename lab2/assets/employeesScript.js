@@ -3,6 +3,13 @@ async function fetchEmployees(){
         const response = await fetch('/api/employess');
         const employees = await response.json();
 
+        const mappedTitle = {
+            jr: "Junior",
+            "mid-level": "Mid Level",
+            sr: "Senior",
+            lead: "Tech Lead"
+        }
+
         employees.forEach(emp=>{
             const card = document.createElement('div');
             const container = document.getElementById('cardsContainer');
@@ -11,6 +18,7 @@ async function fetchEmployees(){
             <h3>${emp.name}</h3>
             <p>Email: ${emp.email}</p>
             <p>Salary: ${emp.salary}</p>
+            <p>Position: ${mappedTitle[emp.level]} Engineer</p>
             `;
             container.appendChild(card);
             

@@ -1,0 +1,28 @@
+html
+    head 
+        title Employee Data 
+        link(rel="stylesheet", href="/css/styles.css")
+    body 
+        if error
+            div.error-message
+                h1= message
+                a(href="/employees") Back to Employees List
+        else
+            h1 Employee Data 
+            table 
+                thead 
+                    tr 
+                        th Name 
+                        th Email 
+                        th Salary 
+                        th Level 
+                        th Years 
+                tbody 
+                    tr 
+                        td= employee.name 
+                        td= employee.email    
+                        td= employee.salary    
+                        td= employee.level    
+                        td= employee.yearsOfExperience
+            div.navigation
+                a(href="/employees") Back to Employees List

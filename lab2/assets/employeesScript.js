@@ -19,6 +19,7 @@ async function fetchEmployees(){
             <p>Email: ${emp.email}</p>
             <p>Salary: ${emp.salary}</p>
             <p>Position: ${mappedTitle[emp.level]} Engineer</p>
+            <p>Experience: ${emp.yearsOfExperience} Years</p>
             `;
             container.appendChild(card);
             
